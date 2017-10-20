@@ -1,5 +1,4 @@
-window.onload = function (){
-	alert("hey");
+window.onload = function (){	
 	var boundary = document.querySelectorAll(".boundary");
 	var i;
 	var touchWall = 0;
