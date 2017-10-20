@@ -1,9 +1,17 @@
 window.onload = function (){
-	var boundary1 = document.getElementById("boundary1");
-	boundary1.onmouseover = turnRed;
+	alert("hey");
+	var boundary = document.querySelectorAll(".boundary");
+	var i;
 	
-	function turnRed() {
-		boundary1.classList.add("youlose");
+	
+	for (i = 0; i < boundary.length; i++) {
+		boundary[i].addEventListener("mouseover",turnRed);
+	}
+	
+	function turnRed(i) {
+		for (i = 0; i < boundary.length; i++) {
+		boundary[i].classList.add("youlose");
+	}
 	}
 }
 
