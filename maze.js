@@ -26,6 +26,16 @@ window.onload = function (){
 		}		
 	}
 	
+	var startMaze = document.getElementById("start");
+	
+	startMaze.onclick = resetMaze;
+	
+	function resetMaze() {
+		for (i = 0; i < boundary.length; i++) {
+		boundary[i].classList.remove("youlose");
+	}
+	}
+	
 	
 }
 
