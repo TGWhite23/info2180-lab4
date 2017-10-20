@@ -14,6 +14,7 @@ window.onload = function (){
 		for (i = 0; i < boundary.length; i++) {
 		boundary[i].classList.add("youlose");
 		}
+		document.getElementById("status").innerHTML = "You Lose!";
 	}
 	
 	var endMaze = document.getElementById("end");		
@@ -22,7 +23,7 @@ window.onload = function (){
 	
 	function youWin () {
 		if (touchWall == 0) {
-		alert ("You Win");		
+		document.getElementById("status").innerHTML = "You Win!";;		
 		}		
 	}
 	
@@ -35,6 +36,8 @@ window.onload = function (){
 		boundary[i].classList.remove("youlose");
 	}
 	}
+	
+	
 	
 	
 }
